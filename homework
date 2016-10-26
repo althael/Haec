@@ -1,0 +1,44 @@
+public class Calculator {
+	
+	
+	 	public static int sum_integer(int a, int b) {
+	 	
+	 	int sum_result=a+b;
+	 	
+	 	return sum_result;
+	 
+	 	}
+	 
+	 	public static int diff_integer(int a,int b) {
+	 	
+	 	int diff_result=a-b;
+	 	
+	 	return diff_result;
+		
+	 	
+	 	}
+	 
+	 	
+	 public static void main(String[] args) {
+	 	
+	     System.out.println("Calling sum_integer");
+	     int a=1;
+	     int b=2;
+	     
+	     a=sum_integer(a,b);
+	     
+	 	
+	 
+	 
+	 	
+	 	System.out.println("calling diff_integer");
+	 	
+	    diff_integer(a,b);
+	 	
+	 	
+	
+	 }
+	 	
+	 }
+
+
