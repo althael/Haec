@@ -1,0 +1,40 @@
+
+public class Loops {
+	
+	public static int add (int a ,int b) {
+		
+		
+		int sum=(a+b);
+		
+		return sum;
+	}
+	
+	public static int diff(int a ,int b) {
+	
+	
+	int diff=(a-b);
+	
+	return diff;
+	
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int a=Library.randomInteger();
+		int b=Library.randomInteger();
+		int c=Library.randomInteger();
+		
+		
+	if 	((c % 2) == 0) {
+		
+		System.out.println("The result is"+add(a,b));
+	}
+		
+	else {
+		
+	System.out.println("The result is"+diff(a,b));
+}
+	}
+
+}
