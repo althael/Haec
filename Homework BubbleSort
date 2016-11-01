@@ -1,12 +1,12 @@
-
 public class Bubblesort {
+	static int[] unsortedArray = { 5, 1, 12, -5, 25, 45 };
 
-	static int[] unsortedArray = { 1, 2, 3 };
-
-	public static void Bubblesort_Medthod(int[] num) {
+	// sorting method
+	public static void Bubblesort_Method() {
 
 		boolean unsorted = true;
 		while (unsorted) {
+
 			unsorted = false;
 			for (int i = 0; i < unsortedArray.length - 1; i++) {
 				if (unsortedArray[i] > unsortedArray[i + 1]) {
@@ -23,10 +23,21 @@ public class Bubblesort {
 
 	}
 
+	// printing array
+	public static void Print_Array() {
+
+		System.out.println("The sorted array is");
+
+		for (int i : unsortedArray) {
+			System.out.println(i);
+		}
+
+	}
+
+	// main method
 	public static void main(String[] args) {
 
-		System.out.println("Prints the unsorted array" + unsortedArray);
-		System.out.println("Prints the sorted array" + sortedArray);
-
+		Bubblesort_Method();
+		Print_Array();
 	}
 }
