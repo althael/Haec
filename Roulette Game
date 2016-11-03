@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Roulette {
 
-	static int spin_number = (int) (Math.random() * ((36 - 0) + 1));
-
 	public static void main(String[] args) {
 
 		Scanner place_bet = new Scanner(System.in);
@@ -16,20 +14,19 @@ public class Roulette {
 		System.out.println("Please Choose a number to bet on:");
 		int number = reader.nextInt();
 
-		spin_number = (int) (Math.random() * ((36 - 0) + 1));
-
 		System.out.println("Time to spin");
 		System.out.println("The spin is " + (int) (Math.random() * ((36 - 0) + 1)));
 
+		int spin_number = (int) (Math.random() * ((36 - 0) + 1));
 		int starting_money = 100;
+
 		
-		 if (spin_number==number) { 
-			 starting_money * 4;
-			 }
+		  if (spin_number==number) { 
 		 
-		 else {
-	           starting_money-bet 
-			 }
+		System.out.println("Your new balance is" +(starting_money * 4));
+		}
+		  
+		 else { starting_money-bet }
 		 
 
 	}
