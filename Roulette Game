@@ -6,12 +6,12 @@ public class Roulette {
 
 	public static void main(String[] args) {
 
-		// player inputs his bet
 		Scanner place_bet = new Scanner(System.in);
 		System.out.println("Hello and Welcome to the game LOSE YOUR MONEY TONIGHT!");
 		System.out.println("You Start the game with 100 euros");
 		while (starting_money > 0) {
-
+			
+			//player inputs his bet
 			System.out.println("Please Place Your Bet:");
 			bet = place_bet.nextInt();
 			while (bet > starting_money) {
@@ -26,21 +26,19 @@ public class Roulette {
 			int number = reader.nextInt();
 
 			// RNG spin number
-			int spin_number = (int)(Math.random() * ((36 - 0) + 1));
+			int spin_number = (int) (Math.random() * ((36 - 0) + 1));
 			System.out.println("Time to spin");
 			System.out.println("The spin is " + spin_number);
 
 			if (spin_number == number) {
-            starting_money=starting_money*4;
+				starting_money = starting_money * 4;
 				System.out.println("Your new balance is" + (starting_money));
-				
 
 			} else {
 				starting_money = starting_money - bet;
 				System.out.println("You lost the bet");
-				System.out.println("You now have"+ starting_money+ "euros");
-				
-				
+				System.out.println("You now have" + starting_money + "euros");
+
 			}
 		}
 
