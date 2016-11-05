@@ -1,33 +1,48 @@
 import java.util.Scanner;
 
 public class Roulette {
+	static int starting_money = 100;
+	static int bet;
 
 	public static void main(String[] args) {
 
+		// player inputs his bet
 		Scanner place_bet = new Scanner(System.in);
 		System.out.println("Hello and Welcome to the game LOSE YOUR MONEY TONIGHT!");
 		System.out.println("You Start the game with 100 euros");
-		System.out.println("Please Place Your Bet:");
-		int bet = place_bet.nextInt();
+		while (starting_money > 0) {
 
-		Scanner reader = new Scanner(System.in);
-		System.out.println("Please Choose a number to bet on:");
-		int number = reader.nextInt();
+			System.out.println("Please Place Your Bet:");
+			bet = place_bet.nextInt();
+			while (bet > starting_money) {
+				System.out.println("You cant bet more than  you've got,pal");
+				bet = place_bet.nextInt();
+			}
 
-		System.out.println("Time to spin");
-		System.out.println("The spin is " + (int) (Math.random() * ((36 - 0) + 1)));
+			// player inputs the number he bets on
+			Scanner reader = new Scanner(System.in);
+			System.out.println("Please Choose a number to bet on:");
 
-		int spin_number = (int) (Math.random() * ((36 - 0) + 1));
-		int starting_money = 100;
+			int number = reader.nextInt();
 
-		
-		  if (spin_number==number) { 
-		 
-		System.out.println("Your new balance is" +(starting_money * 4));
+			// RNG spin number
+			int spin_number = (int)(Math.random() * ((36 - 0) + 1));
+			System.out.println("Time to spin");
+			System.out.println("The spin is " + spin_number);
+
+			if (spin_number == number) {
+            starting_money=starting_money*4;
+				System.out.println("Your new balance is" + (starting_money));
+				
+
+			} else {
+				starting_money = starting_money - bet;
+				System.out.println("You lost the bet");
+				System.out.println("You now have"+ starting_money+ "euros");
+				
+				
+			}
 		}
-		  
-		 else { starting_money-bet }
-		 
 
 	}
 
