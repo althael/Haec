@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class BackToBack {
+	
+	
+	public static void main(String [] args){
+		
+		Scanner scan = new Scanner(System.in);
+		String i = scan.next();
+		int a;
+		
+	for (a=i.length(); a>=0; a--){
+		
+		System.out.println(a);
+		
+	}
+		
+		
+	}
+
+}
