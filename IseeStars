@@ -1,1 +1,19 @@
+import java.util.Scanner;
 
+public class PrintStars {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a number:");
+		int i = scan.nextInt();
+		int a, s;
+
+		for (a = 1; a <= i; a++) {
+			for (s = 1; s < a; s++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
