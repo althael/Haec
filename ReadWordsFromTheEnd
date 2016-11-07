@@ -7,12 +7,15 @@ public class BackToBack {
 	public static void main(String [] args){
 		
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a String");
 		String i = scan.next();
 		int a;
 		
-	for (a=i.length(); a>=0; a--){
+	for (a=i.length()-1;  a>=0; a--){
+		 
+		char result = i.charAt(a);
 		
-		System.out.println(a);
+		System.out.println(result);
 		
 	}
 		
