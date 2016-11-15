@@ -1,0 +1,12 @@
+public class HAUperson {
+	public static final int ID_CARD_TYPE=1;
+	public static final int PASSPORT_CARD_TYPE=2;
+	public static final int DRIVERS_LICENSE_CARD_TYPE=3;
+	String name;
+	String surname;
+	String dateOfBirth;
+	boolean sex;
+	int idCardType;
+	String idCardNumber;
+	String residenceAddress;
+}
