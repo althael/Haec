@@ -1,0 +1,35 @@
+import java.util.Scanner;
+/*Create a very simple hangman game. Read from the user 5 words (before storing the words, 
+call the trim() method). Pick a random word and display as many underscore characters '_'
+to the user, as the length of the word. Ask the user to enter a character and if the character
+is found in the word, replace the '_' character in the corresponding position and show the result
+to the user. If the character is not found in the word, print an error message. The user is 
+allowed to make three wrong guesses. After that the they lose the game and the word is printed 
+to the user. Continue until the word is revealed. At the end of a game ask the user continue,
+and if they wish to continue pick another random words from the ones entered at the start of the
+game. */
+
+public class Hangman {
+	int i;
+	String words;
+
+	public static void main(String args[]) {
+
+		String words[] = new String[5];
+		Scanner userInput = new Scanner(System.in);
+
+		for (int i = 0; i < 5; i++) {
+
+			System.out.println("Enter a word plox =) : ");
+
+			
+			words[i]=userInput.next();
+			
+
+			
+
+		}
+
+	}
+
+}
