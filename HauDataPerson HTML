@@ -1,1 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Say Hello to my Little friend</title>
+</head>
+<body>
+<form action="action_page.php" method="get">
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+  Phone number:<br>
+  <input type="text" name="phonenumber">
+  <br>
+  Mobile Number:<br>
+  <input type="text" name="Mobilenumber">
+  <br>
+  Social Security Number:<br>
+  <input type="text" name="SocialsecurityNumber">
+  <br>
+  Bank Account Number:<br>
+  <input type="text" name="bankaccountnumber">
+  <br>
+  Empoyee ID:<br>
+  <input type="text" name="employeeID">
+  <br>
+  Date of Birth:<br>
+  <input type="text" name="dateofbirth">
+  <br>
+  Sex:<br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+  Address:<br>
+  <input type="text" name="address">
+  <br>  
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
+
 
